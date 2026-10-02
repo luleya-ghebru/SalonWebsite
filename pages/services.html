@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Glow Hair Salon</title>
+  <meta name="description" content="Glow Hair Salon services and prices: haircuts, braiding, styling, colouring, treatments and special-occasion hair.">
+  <meta name="keywords" content="hair salon, braids, haircuts, hair colour, hair treatments, book hair appointment">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- One external stylesheet shared by every page -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header: logo and main navigation buttons -->
+  <header class="site-header">
+    <a class="logo" href="../index.html">Glow <span>Hair Salon</span></a>
+    <button class="menu-toggle" aria-label="Open or close the menu" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" aria-current="page" href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="enquiry.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Services and prices</h1>
+    <p>Prices are a guide and depend on hair length, thickness and style.</p>
+    <label for="service-search" class="search-label">Search services</label>
+    <input type="search" id="service-search" placeholder="Try &quot;braids&quot; or &quot;colour&quot;">
+    <section class="grid" id="service-list">
+      <article class="card" data-name="Haircuts 45 min"><div class="img-slot"><img class="slot-img" src="../assets/Haircuts.jfif" alt="Haircuts hairstyle example"><span><br></span></div><h3>Haircuts</h3><p>Cut, wash and finish for women, men and teens.</p><p class="meta">45 min &middot; <span class="price">From R180</span></p></article>
+      <article class="card" data-name="Braiding 3 hours"><div class="img-slot"><img class="slot-img" src="../assets/braid 2.webp" alt="Braiding hairstyle example"><span><br></span></div><h3>Braiding</h3><p>Knotless, box braids, cornrows and protective styles.</p><p class="meta">3 hours &middot; <span class="price">From R450</span></p></article>
+      <article class="card" data-name="Styling 1 hour"><div class="img-slot"><img class="slot-img" src="../assets/Styling.jpg" alt="Styling hairstyle example"><span><br></span></div><h3>Styling</h3><p>Blow-dry, curls, straightening and updos.</p><p class="meta">1 hour &middot; <span class="price">From R300</span></p></article>
+      <article class="card" data-name="Colouring 2 hours"><div class="img-slot"><img class="slot-img" src="../assets/Colouring.jfif" alt="Colouring hairstyle example"><span><br></span></div><h3>Colouring</h3><p>Full colour, highlights and toning.</p><p class="meta">2 hours &middot; <span class="price">From R650</span></p></article>
+      <article class="card" data-name="Treatments 1 hour"><div class="img-slot"><img class="slot-img" src="../assets/Treatments.webp" alt="Treatments hairstyle example"><span><br></span></div><h3>Treatments</h3><p>Deep conditioning and natural hair care.</p><p class="meta">1 hour &middot; <span class="price">From R250</span></p></article>
+      <article class="card" data-name="Special occasion 1.5 hours"><div class="img-slot"><img class="slot-img" src="../assets/Special occasion.jfif" alt="Special occasion hairstyle example"><span><br></span></div><h3>Special occasion</h3><p>Weddings, graduations and parties.</p><p class="meta">1.5 hours &middot; <span class="price">From R600</span></p></article>
+    </section>
+    <p id="no-results" class="response" hidden>No services match your search.</p>
+
+    <section>
+      <h2>Hair care tips</h2>
+      <ul class="tips">
+        <li>Arrive with clean, detangled hair for braiding appointments.</li>
+        <li>Bring photos of the style you want.</li>
+        <li>Cancel or move your booking at least 24 hours ahead.</li>
+      </ul>
+      <a class="btn" href="enquiry.html">Book an appointment</a>
+    </section>
+  </main>
+
+  <!-- Footer: contact info, social links, opening hours, location -->
+   <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>Contact</h3><p>Phone: <a href="tel:+27843855975">084 385 5975</a><br>WhatsApp: <a href="https://wa.me/27820000000">082 653 9865</a><br>Email: glowhairsalon@gmail.com</p></div>
+      <div><h3>Opening hours</h3><p>Tue - Fri: 09:00 - 17:00<br>Sat: 08:00 - 15:00<br>Sun &amp; Mon: Closed</p></div>
+      <div><h3>Location</h3><p>10 North Road, <br>Gqeberha, 6001</p></div>
+      <div><h3>Follow us</h3><p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.facebook.com/">Facebook</a><br><a href="https://www.tiktok.com/">TikTok</a></p></div>
+    </div>
+    <p class="copy">&copy; 2026 Glow Hair Salon &middot; Your name &middot; Student number &middot; WEDE5020</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+

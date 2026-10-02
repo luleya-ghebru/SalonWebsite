@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Glow Hair Salon</title>
+  <meta name="description" content="See hairstyles created at Glow Hair Salon: braids, natural hair, cuts, colour and special occasion styles.">
+  <meta name="keywords" content="hair salon, braids, haircuts, hair colour, hair treatments, book hair appointment">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- One external stylesheet shared by every page -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header: logo and main navigation buttons -->
+  <header class="site-header">
+    <a class="logo" href="../index.html">Glow <span>Hair Salon</span></a>
+    <button class="menu-toggle" aria-label="Open or close the menu" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" aria-current="page" href="gallery.html">Gallery</a></li>
+        <li><a href="enquiry.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gallery</h1>
+    <div class="filters" role="group" aria-label="Filter gallery">
+      <button class="btn active-filter" data-filter="all">All</button>
+      <button class="btn outline" data-filter="braids">Braids</button>
+      <button class="btn outline" data-filter="natural">Natural hair</button>
+      <button class="btn outline" data-filter="cuts">Cuts</button>
+      <button class="btn outline" data-filter="colour">Colour</button>
+      <button class="btn outline" data-filter="occasion">Occasion</button>
+    </div>
+    <section class="grid four" id="gallery">
+      <figure class="card" data-category="braids"><div class="img-slot"><img class="slot-img" src="../assets/Knotless braids.jfif" alt="Knotless braids"><span><br></span></div><figcaption>Knotless braids</figcaption></figure>
+      <figure class="card" data-category="cuts"><div class="img-slot"><img class="slot-img" src="../assets/Layered cut.jpg" alt="Layered cut"><span><br></span></div><figcaption>Layered cut</figcaption></figure>
+      <figure class="card" data-category="colour"><div class="img-slot"><img class="slot-img" src="../assets/Rose gold colour.jfif" alt="Rose gold colour"><span><br></span></div><figcaption>Rose gold colour</figcaption></figure>
+      <figure class="card" data-category="natural"><div class="img-slot"><img class="slot-img" src="../assets/Twist-out on natural hair.jfif" alt="Twist-out on natural hair"><span><br></span></div><figcaption>Twist-out on natural hair</figcaption></figure>
+      <figure class="card" data-category="occasion"><div class="img-slot"><img class="slot-img" src="../assets/Wedding updo.jfif" alt="Wedding updo"><span><br></span></div><figcaption>Wedding updo</figcaption></figure>
+      <figure class="card" data-category="braids"><div class="img-slot"><img class="slot-img" src="../assets/Cornrow design.jpg" alt="Cornrow design"><span><br></span></div><figcaption>Cornrow design</figcaption></figure>
+      <figure class="card" data-category="cuts"><div class="img-slot"><img class="slot-img" src="../assets/Classic fade.webp" alt="Classic fade"><span><br></span></div><figcaption>Classic fade</figcaption></figure>
+      <figure class="card" data-category="occasion"><div class="img-slot"><img class="slot-img" src="../assets/Graduation curls.jpg" alt="Graduation curls"><span><br></span></div><figcaption>Graduation curls</figcaption></figure>
+    </section>
+  </main>
+
+  <!-- Footer: contact info, social links, opening hours, location -->
+   <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>Contact</h3><p>Phone: <a href="tel:+27843855975">084 385 5975</a><br>WhatsApp: <a href="https://wa.me/27820000000">082 653 9865</a><br>Email: glowhairsalon@gmail.com</p></div>
+      <div><h3>Opening hours</h3><p>Tue - Fri: 09:00 - 17:00<br>Sat: 08:00 - 15:00<br>Sun &amp; Mon: Closed</p></div>
+      <div><h3>Location</h3><p>10 North Road, <br>Gqeberha, 6001</p></div>
+      <div><h3>Follow us</h3><p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.facebook.com/">Facebook</a><br><a href="https://www.tiktok.com/">TikTok</a></p></div>
+    </div>
+    <p class="copy">&copy; 2026 Glow Hair Salon &middot; Your name &middot; Student number &middot; WEDE5020</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

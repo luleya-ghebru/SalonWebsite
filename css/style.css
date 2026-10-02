@@ -1,0 +1,137 @@
+/* ===== Reset: consistent styling across browsers ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ===== Base style: colour scheme, fonts, spacing ===== */
+:root{
+  --rose:#C97B84;        /* primary: buttons and highlights */
+  --rose-dark:#9E4B56;   /* darker rose for links (good contrast) */
+  --blush:#F7E3E5;       /* soft pink section backgrounds */
+  --charcoal:#292525;    /* headings, navigation, text */
+  --cream:#FFF8F2;       /* page background */
+}
+body{font-family:'Poppins',Arial,sans-serif;background:var(--cream);color:var(--charcoal);line-height:1.6}
+h1,h2,h3,.logo{font-family:'Playfair Display',Georgia,serif;line-height:1.2;color:var(--charcoal)}
+h1{font-size:2.6rem;margin-bottom:1rem}
+h2{font-size:1.8rem;margin-bottom:.8rem}
+h3{font-size:1.2rem;margin-bottom:.4rem}
+p{margin-bottom:1rem;max-width:65ch}
+img{max-width:100%;display:block}
+a{color:var(--rose-dark)}
+main{max-width:72rem;margin:0 auto;padding:2rem 5%}
+section{margin-bottom:3rem}
+.eyebrow{color:var(--rose-dark);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;margin-bottom:.4rem}
+
+/* ===== Header and navigation buttons ===== */
+.site-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  padding:.8rem 5%;background:#fff;box-shadow:0 2px 10px rgba(41,37,37,.12);position:sticky;top:0;z-index:10}
+.logo{font-size:1.6rem;font-weight:700;text-decoration:none}
+.logo span{color:var(--rose)}
+.nav{display:flex;gap:.5rem;list-style:none}
+.nav a,.btn{display:inline-block;padding:.55rem 1.2rem;border-radius:2rem;border:2px solid var(--rose);
+  font:500 1rem 'Poppins',Arial,sans-serif;text-decoration:none;cursor:pointer;
+  transition:background .25s,color .25s,transform .25s}
+.nav a{background:transparent;color:var(--charcoal);border-color:transparent}
+.nav a:hover,.nav a:focus,.nav a.active{background:var(--rose);color:var(--charcoal);border-color:var(--rose)}
+.btn{background:var(--rose);color:var(--charcoal);margin:.3rem .4rem .3rem 0}
+.btn:hover,.btn:focus{background:var(--charcoal);border-color:var(--charcoal);color:var(--cream);transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.btn.outline{background:transparent}
+.btn.outline:hover,.btn.outline:focus,.btn.active-filter{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+.menu-toggle{display:none;background:var(--rose);color:var(--charcoal);border:0;border-radius:.5rem;font-size:1.4rem;padding:.2rem .7rem;cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--charcoal);outline-offset:2px}
+
+/* ===== Layout: Grid ===== */
+.hero,.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.two-col{align-items:start}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:1.5rem}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border-radius:1rem;padding:1.2rem;box-shadow:0 4px 14px rgba(41,37,37,.1);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(201,123,132,.35)}
+.card .img-slot{min-height:11rem;margin-bottom:1rem}
+.meta{color:var(--rose-dark);font-size:.9rem}
+.price{font-weight:600}
+figcaption,blockquote footer{font-size:.9rem;color:var(--rose-dark)}
+.reviews blockquote{font-style:italic}
+.offer{background:var(--blush);border-radius:1rem;padding:2rem;text-align:center}
+.offer p{margin-left:auto;margin-right:auto}
+.tips{margin:0 0 1rem 1.2rem}
+.filters{margin-bottom:1.5rem}
+
+//* ===== Image slots ===== */
+
+.img-slot {
+    position: relative;
+    min-height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, var(--blush), var(--rose));
+    border: 2px dashed var(--rose-dark);
+    border-radius: 1rem;
+
+    overflow: hidden;
+}
+
+/* Make the whole image visible */
+.img-slot .slot-img {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Placeholder text */
+.img-slot span {
+    text-align: center;
+    color: var(--charcoal);
+    font-size: .9rem;
+    padding: 1rem;
+}
+/* ===== Forms ===== */
+form{background:#fff;padding:1.5rem;border-radius:1rem;box-shadow:0 4px 14px rgba(41,37,37,.1);max-width:40rem}
+label,legend{display:block;font-weight:500;margin-top:1rem}
+fieldset{border:0;margin-top:.5rem}
+input,select,textarea{width:100%;padding:.7rem;border:2px solid var(--rose);border-radius:.6rem;font:inherit;color:var(--charcoal);background:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--charcoal);box-shadow:0 0 0 3px rgba(201,123,132,.4)}
+.radio-row label{display:inline-block;margin-right:1rem;font-weight:400}
+.radio-row input{width:auto}
+.search-label{margin-bottom:.3rem}
+#service-search{max-width:22rem;margin-bottom:1.5rem}
+.error{display:block;min-height:1.1rem;color:#a3122f;font-size:.85rem}
+input.invalid,select.invalid,textarea.invalid{border-color:#a3122f}
+.response{max-width:40rem;margin-top:1.5rem;padding:1.2rem;border-radius:1rem;background:var(--blush);border-left:6px solid var(--rose)}
+.response:empty,[hidden]{display:none}
+
+/* ===== Footer ===== */
+.site-footer{background:var(--charcoal);color:var(--cream);padding:2rem 5% 1rem}
+.site-footer h3{color:var(--rose);margin-bottom:.5rem}
+.site-footer a{color:var(--cream)}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:72rem;margin:0 auto}
+.copy{text-align:center;margin:1rem auto 0;font-size:.85rem}
+
+/* ===== Responsive: tablet ===== */
+@media (max-width:64em){
+  .grid,.grid.four{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+/* ===== Responsive: mobile (single column, collapsible menu) ===== */
+@media (max-width:40em){
+  h1{font-size:2rem}
+  .hero,.two-col,.grid,.grid.four,.footer-grid{grid-template-columns:1fr}
+  .menu-toggle{display:block}
+  .site-header nav{width:100%}
+  .nav{display:none;flex-direction:column;margin-top:.8rem}
+  .nav.open{display:flex}
+  .nav a{display:block;text-align:center}
+  .img-slot{min-height:12rem}
+  .btn{display:block;text-align:center}
+}
+.slot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Glow Hair Salon</title>
+  <meta name="description" content="Contact Glow Hair Salon by phone, WhatsApp, email or the contact form. Find our location and opening hours.">
+  <meta name="keywords" content="hair salon, braids, haircuts, hair colour, hair treatments, book hair appointment">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- One external stylesheet shared by every page -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header: logo and main navigation buttons -->
+  <header class="site-header">
+    <a class="logo" href="../index.html">Glow <span>Hair Salon</span></a>
+    <button class="menu-toggle" aria-label="Open or close the menu" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="enquiry.html">Booking</a></li>
+        <li><a class="active" aria-current="page" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact us</h1>
+    <section class="two-col">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Phone: <a href="tel:+27210000000">021 000 0000</a><br>WhatsApp: <a href="https://wa.me/27820000000">082 000 0000</a><br>Email: hello@glowhairsalon.co.za</p>
+        <a class="btn" href="https://wa.me/27820000000">Chat on WhatsApp</a>
+        <h2>Visit us</h2>
+        <p>10 North Road, Gqeberha, 6001<br>Tue - Fri: 09:00 - 17:00 &middot; Sat: 08:00 - 15:00</p>
+        <!-- Google Map for the salon location(s) can be embedded here in Part 3 -->
+        <div class="img-slot"><span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.9374912251888!2d25.6046259!3d-33.9427358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad3ad9b946f59%3A0x751c238903768a7!2s10%20North%20Road%2C%20North%20End%2C%20Gqeberha%2C%206001!5e0!3m2!1sen!2sza!4v1790951116819!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></span></div>
+      </div>
+      <form id="contact-form" novalidate>
+        <h2>Send a message</h2>
+        <label for="c-name">Full name</label>
+        <input type="text" id="c-name" required minlength="2" autocomplete="name">
+        <span class="error" id="c-name-err"></span>
+
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" required autocomplete="email">
+        <span class="error" id="c-email-err"></span>
+
+        <label for="c-type">Message type</label>
+        <select id="c-type" required>
+          <option value="">Choose a type</option>
+          <option>General question</option>
+          <option>Change or cancel a booking</option>
+          <option>Feedback</option>
+        </select>
+        <span class="error" id="c-type-err"></span>
+
+        <label for="c-message">Message</label>
+        <textarea id="c-message" rows="5" required minlength="10"></textarea>
+        <span class="error" id="c-message-err"></span>
+
+        <button type="submit" class="btn">Send email</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer: contact info, social links, opening hours, location -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>Contact</h3><p>Phone: <a href="tel:+27843855975">084 385 5975</a><br>WhatsApp: <a href="https://wa.me/27820000000">082 653 9865</a><br>Email: glowhairsalon@gmail.com</p></div>
+      <div><h3>Opening hours</h3><p>Tue - Fri: 09:00 - 17:00<br>Sat: 08:00 - 15:00<br>Sun &amp; Mon: Closed</p></div>
+      <div><h3>Location</h3><p>10 North Road, <br>Gqeberha, 6001</p></div>
+      <div><h3>Follow us</h3><p><a href="https://www.instagram.com/">Instagram</a><br><a href="https://www.facebook.com/">Facebook</a><br><a href="https://www.tiktok.com/">TikTok</a></p></div>
+    </div>
+    <p class="copy">&copy; 2026 Glow Hair Salon &middot; Your name &middot; Student number &middot; WEDE5020</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
